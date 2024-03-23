@@ -60,5 +60,39 @@
       "dealsAmount": "2345",
       "dealsPercent": "56.64"
     }
+  ],
+
+  "user": [
+    {
+      "id": "admin",
+      "name": "Nihira",
+      "password": "admin",
+      "email": "nihiratechiees@gmail.com",
+      "phone": "8989898989",
+      "country": "usa",
+      "address": "",
+      "role":"admin",
+      "gender": "female"
+    },
+    {
+      "id": "ntuser",
+      "name": "Fullname",
+      "password": "ntuser",
+      "email": "email@email.com",
+      "phone": "56778889989",
+      "country": "singapore",
+      "address": "address1",
+      "role":"user",
+      "gender": "male"
+    }
+  ],
+
+  "stockRec": [
+    {
+      "id": "1",
+      "reportType": "Stock Recommendation",
+      "date": "21/09/2023",
+      "link": "nihiratechiees@gmail.com"
+    }
   ]
 }

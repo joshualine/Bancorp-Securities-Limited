@@ -1,10 +1,20 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Footer from "../../components/footer/Footer"
 import Header from "../../components/header/Header"
 import ListButton from "../../components/listButton/ListButton"
+import { useEffect } from "react"
 
 
 const AdminWelcomePage = () => {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let username = sessionStorage.getItem('username')
+    if(username === "" || username === null){
+      navigate("/admin")
+    }
+  }, [])
+  
   return (
     <>
       <Header />

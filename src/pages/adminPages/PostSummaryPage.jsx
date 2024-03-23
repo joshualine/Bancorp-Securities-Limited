@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom"
 import SummaryForm from "../../components/form/SummaryForm"
 import Header from "../../components/header/Header"
 
@@ -16,6 +18,15 @@ const postSummary = async (newSummary) => {
 
 
 const PostSummaryPage = () => {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let username = sessionStorage.getItem('username')
+    if(username === "" || username === null){
+      navigate("/admin")
+    }
+  }, [])
+
   return (
     <>
     <Header />

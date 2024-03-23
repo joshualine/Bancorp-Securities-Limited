@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div>
-      <Navbar expand="lg" className="navbar-dark fixed-top px-3" style={{backgroundColor: '#191970'}}>
+      <Navbar expand="lg" className="navbar-dark fixed-top px-2 shadow" style={{backgroundColor: '#191970'}}>
         <Container>
           <Navbar.Brand href="#home">Bancorp Securities Limited</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

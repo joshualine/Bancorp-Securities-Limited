@@ -47,7 +47,6 @@ const SummaryForm = ({ postSummarySubmit }) => {
 
     return navigate("/admin_board")
 
-
   }
 
   return (
