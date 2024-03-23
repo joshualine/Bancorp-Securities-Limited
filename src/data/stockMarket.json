@@ -1,0 +1,64 @@
+{
+  "stockMarket": [
+    {
+      "id": "1",
+      "ngxAmount": "1,234,566",
+      "ngxPercent": -20,
+      "ngxYtd": "554",
+      "marketCapAmount": "2345",
+      "marketCapPercent": "-34.44",
+      "marketCapYtd": "4544",
+      "volumeAmount": "2345",
+      "volumePercent": "87",
+      "valueAmount": "2345",
+      "valuePercent": "67",
+      "dealsAmount": "2345",
+      "dealsPercent": "56.64"
+    },
+    {
+      "id": "2",
+      "ngxAmount": "234,566",
+      "ngxPercent": 20,
+      "ngxYtd": "554",
+      "marketCapAmount": "45",
+      "marketCapPercent": "34.44",
+      "marketCapYtd": "453333",
+      "volumeAmount": "2345",
+      "volumePercent": "87",
+      "valueAmount": "2345",
+      "valuePercent": "67",
+      "dealsAmount": "2345",
+      "dealsPercent": "56.64"
+    },
+    {
+      "id": "3",
+      "ngxAmount": "234,566",
+      "ngxPercent": 20,
+      "ngxYtd": "554",
+      "marketCapAmount": "333345",
+      "marketCapPercent": "-23.44",
+      "marketCapYtd": "4333",
+      "volumeAmount": "2345",
+      "volumePercent": "87",
+      "valueAmount": "2345",
+      "valuePercent": "67",
+      "dealsAmount": "2345",
+      "dealsPercent": "56.64"
+    },
+    {
+      "id": "4",
+      "ngxAmount": "2,909,000",
+      "ngxPercent": -20,
+      "ngxYtd": "554",
+      "marketCapAmount": "3454",
+      "marketCapPercent": "-6.44",
+      "marketCapYtd": "4333",
+      "volumeAmount": "2345",
+      "volumePercent": "87",
+      "valueAmount": "2345",
+      "valuePercent": "67",
+      "dealsAmount": "2345",
+      "dealsPercent": "56.64"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+/* (B2) LIST ITEMS */
+.lg-list li {
+  padding: 10px; margin: 10px 0;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
