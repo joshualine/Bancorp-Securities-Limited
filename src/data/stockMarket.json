@@ -59,9 +59,38 @@
       "valuePercent": "67",
       "dealsAmount": "2345",
       "dealsPercent": "56.64"
+    },
+    {
+      "id": "3582",
+      "ngxAmount": "33,433,455",
+      "ngxPercent": "",
+      "ngxYtd": "",
+      "marketCapAmount": "",
+      "marketCapPercent": "",
+      "marketCapYtd": "",
+      "volumeAmount": "",
+      "volumePercent": "",
+      "valueAmount": "",
+      "valuePercent": "",
+      "dealsAmount": "",
+      "dealsPercent": ""
+    },
+    {
+      "id": "b83a",
+      "ngxAmount": "5,656,777",
+      "ngxPercent": "-18",
+      "ngxYtd": "8998",
+      "marketCapAmount": "9988",
+      "marketCapPercent": "897",
+      "marketCapYtd": "",
+      "volumeAmount": "7876",
+      "volumePercent": "8999",
+      "valueAmount": "",
+      "valuePercent": "",
+      "dealsAmount": "",
+      "dealsPercent": ""
     }
   ],
-
   "user": [
     {
       "id": "admin",
@@ -71,7 +100,7 @@
       "phone": "8989898989",
       "country": "usa",
       "address": "",
-      "role":"admin",
+      "role": "admin",
       "gender": "female"
     },
     {
@@ -82,17 +111,31 @@
       "phone": "56778889989",
       "country": "singapore",
       "address": "address1",
-      "role":"user",
+      "role": "user",
       "gender": "male"
     }
   ],
-
   "stockRec": [
     {
       "id": "1",
       "reportType": "Stock Recommendation",
       "date": "21/09/2023",
       "link": "nihiratechiees@gmail.com"
+    },
+    {
+      "id": "f83e",
+      "ngxAmount": "333",
+      "ngxPercent": "333",
+      "ngxYtd": "",
+      "marketCapAmount": "333",
+      "marketCapPercent": "",
+      "marketCapYtd": "",
+      "volumeAmount": "",
+      "volumePercent": "",
+      "valueAmount": "",
+      "valuePercent": "",
+      "dealsAmount": "",
+      "dealsPercent": ""
     }
   ]
 }

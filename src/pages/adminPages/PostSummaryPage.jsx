@@ -16,8 +16,21 @@ const postSummary = async (newSummary) => {
   return;
 };
 
+//Post New Market Summary
+const postStockRec = async (newSummary) => {
+  await fetch('/api/stockRec', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newSummary),
+  });
+  return;
+};
+
 
 const PostSummaryPage = () => {
+  
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -30,7 +43,7 @@ const PostSummaryPage = () => {
   return (
     <>
     <Header />
-      <SummaryForm postSummarySubmit={postSummary}/>
+      <SummaryForm postSummarySubmit={postSummary} checkout={postStockRec}/>
     </>
   )
 }

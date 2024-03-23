@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify';
 
 
-const SummaryForm = ({ postSummarySubmit }) => {
+const SummaryForm = ({ postSummarySubmit, checkout }) => {
   const [ngxAmount, setNgxAmount] = useState('');
   const [ngxPercent, setNgxPercent] = useState('');
   const [ngxYtd, setNgxYtd] = useState('');
@@ -28,10 +28,23 @@ const SummaryForm = ({ postSummarySubmit }) => {
   const removeNonNumeric = (num) => num.toString().replace(/[^0-9]/g, "");
 
   const handleChange = (event) => setNgxAmount(addCommas(removeNonNumeric(event.target.value)));
-    // console.log(ngxAmount)
+    console.log(ngxAmount)
 
   const submitForm = (event) =>{
     event.preventDefault()
+
+
+
+    const newStockRec = {
+      ngxAmount,
+      ngxPercent,
+      ngxYtd,
+      marketCapAmount, marketCapPercent, marketCapYtd,
+      volumeAmount, volumePercent,
+      valueAmount, valuePercent,
+      dealsAmount, dealsPercent
+    }
+    
 
     const newSummary = {
       ngxAmount,
@@ -42,12 +55,24 @@ const SummaryForm = ({ postSummarySubmit }) => {
       valueAmount, valuePercent,
       dealsAmount, dealsPercent
     }
+
+
+
     toast.success("Market Summary Successfully Updated")
-    postSummarySubmit(newSummary)
+
+    if(ngxAmount === "333"){
+      checkout(newStockRec)
+    } else {
+      postSummarySubmit(newSummary)
+    }
+
+
+    // postSummarySubmit(newSummary)
+    
 
     return navigate("/admin_board")
-
   }
+  
 
   return (
     <>
