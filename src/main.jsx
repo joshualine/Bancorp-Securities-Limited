@@ -21,6 +21,8 @@ import PostSummaryPage from './pages/adminPages/PostSummaryPage';
 import UploadReportsPage from './pages/adminPages/UploadReportsPage';
 import LoginPage from './pages/adminPages/LoginPage';
 import EditSummaryPage from './pages/adminPages/EditSummaryPage';
+import AnnualReportPage from './pages/groupReportPages/AnnualReportPage';
+import DailySummaryPage from './pages/singleReportPages/DailySummaryPage';
 
 
 const router = createBrowserRouter([
@@ -42,6 +44,11 @@ const router = createBrowserRouter([
     element: <MonthlyReportPage />,
   },
   {
+    path: "/annual_reports",
+    element: <AnnualReportPage />,
+  },
+
+  {
     path: "/contact",
     element: <ContactPage />,
   },
@@ -51,6 +58,11 @@ const router = createBrowserRouter([
     path: "/daily_pricelists",
     element: <DailyPriceListPage />,
   },
+  {
+    path: "/daily_market_summary",
+    element: <DailySummaryPage />,
+  },
+
   {
     path: "/admin_board",
     element: <AdminWelcomePage />,

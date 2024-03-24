@@ -14,7 +14,7 @@ const Header = () => {
     <div>
       <Navbar expand="lg" className="navbar-dark fixed-top px-2 shadow" style={{backgroundColor: '#191970'}}>
         <Container>
-          <Navbar.Brand href="#home">Bancorp Securities Limited</Navbar.Brand>
+          <Navbar.Brand href="https://bancorpsecurities.com">Bancorp Securities Limited</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -24,9 +24,10 @@ const Header = () => {
                 <NavDropdown.Item as={Link} to={"/daily_reports"}>Daily Reports</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={"/weekly_reports"}>Weekly Reports</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={"/monthly_reports"}>Monthly Reports</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/yearly_reports"}>Yearly Reports</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/annual_reports"}>Annual Reports</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to={"/contact"}>Contact Us</Nav.Link>
+              <Nav.Link as={Link} to={"https://www.capitalbancorpngonline.com/Bancorp_TradePal"} target="_blank" style={{backgroundColor: 'white', borderRadius: "10px", color: "#191970"}}>TradePal</Nav.Link>
+              <Nav.Link as={Link} to={"https://bancorpsecurities.com/contact.html"}>Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -8,7 +8,7 @@ const Home = () => {
 
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
-          <div className="">
+          <div className="carousel-item active">
             <img src={civic} className="d-block w-100" alt="..." />
           </div>
         </div>

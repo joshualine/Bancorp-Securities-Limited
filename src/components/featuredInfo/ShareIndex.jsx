@@ -1,41 +1,60 @@
+import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import Card from "../card/Card"
-import { FaArrowDown } from "react-icons/fa";
-
-const ngx = [{
-  "id": 1,
-  "ngxAmount": "104,663.3",
-  "ngxPercent": "-0.40",
-  "ngxYtd": "34.62"
-},
-{
-  "id": 2,
-  "ngxAmount": "104",
-  "ngxPercent": "-0.40",
-  "ngxYtd": "34.62"
-},
-{
-  "id": 3,
-  "ngxAmount": "104,663.34",
-  "ngxPercent": "-0.40",
-  "ngxYtd": "34.62"
-}
-]
-let len = ngx.pop()
+import { useEffect, useState } from "react";
+import Spinner from "../Spinner";
 
 
 
 const ShareIndex = () => {
 
+  const [ngx, setNgx] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const badgeStyle2 = {
+  useEffect(() => {
+    const fetchNgx = async () => {
+      try {
+        const res = await fetch('/api/stockMarket');
+        const data = await res.json();
+        const dataShort = data.pop()
+        setNgx(dataShort);
+
+      } catch (error) {
+        console.log("Error fetching data", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchNgx();
+
+  }, []);
+
+  let badgeStyle2 = {
+    color: "green", backgroundColor: "#b9f8d5"
+  }
+  let badgeStyle3 = {
     color: "red", backgroundColor: "#fa999944"
+  }
+
+  const arrowCheck = ngx.ngxPercent;
+
+  let arrowColor = {}
+  let arrowShape = true
+  if (arrowCheck <= 0) {
+    arrowColor = badgeStyle3
+  } else {
+    arrowColor = badgeStyle2
+    arrowShape = false
   }
 
 
   return (
-    <Card title={"NGX All-Share Index"} amount={len.ngxAmount} percentage={"-0.40"} badgeStyle={badgeStyle2} ytdFigure={39.46}>
-      <FaArrowDown className="inline mb-1" />
-    </Card>
+    <>
+      {loading ? (<Spinner />) : (<>
+        <Card key={ngx.id} title={"NGX All-Share Index"} amount={ngx.ngxAmount} percentage={ngx.ngxPercent} badgeStyle={arrowColor} ytdFigure={ngx.ngxYtd}>
+          { arrowShape ? (<FaArrowDown className="inline mb-1" />) : (<FaArrowUp className="inline mb-1" />)}
+        </Card>
+      </>)}
+    </>
   )
 }
 

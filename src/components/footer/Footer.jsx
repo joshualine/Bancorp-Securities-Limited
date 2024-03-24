@@ -23,26 +23,28 @@ const Footer = ({ position = "fixed-bottom" }) => {
             <div className="col">
               <h5>Informations</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2 ">Electronic Communication
-                  Indemnity</li>
+                <li className="nav-item mb-2 "><a href="https://bancorpsecurities.com/indemnity.html" className="nav-link p-0 text-white">Electronic Communication
+                  Indemnity</a></li>
                 <div className="b-example-divider">__________________________</div>
-                <li className="nav-item mb-2">Whistleblowing</li>
+                <li className="nav-item mb-2 "><a href="https://bancorpsecurities.com/whistleblowing.html" className="nav-link p-0 text-white">Whistle Blowing</a></li>
                 <div className="b-example-divider">__________________________</div>
-                <li className="nav-item mb-2">Work Hours
-                  Monday-Friday
-                  9:00AM to 4:00PM</li>
+                <li className="nav-item mb-2">Work Hours:
+                  Monday-Friday <span>9:00AM to 4:00PM</span>
+                </li>
               </ul>
             </div>
 
             <div className="col">
               <h5>Quick Links</h5>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Privacy policy</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Bancorp Tradepal Policy</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Terms and Conditions</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Emails:</a></li>
-                <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">info@capitalbancorpgroup.com
-                  stockbroking@capitalbancorpgroup.com</a></li>
+                <li className="nav-item mb-2"><a href="https://bancorpsecurities.com/privacy.html" className="nav-link p-0 text-white">Privacy policy</a></li>
+                <li className="nav-item mb-2"><a href="https://bancorpsecurities.com/Bancorp_TradePal_privacy.html" className="nav-link p-0 text-white">Bancorp Tradepal Policy</a></li>
+                <li className="nav-item mb-2"><a href="https://bancorpsecurities.com/terms.html" className="nav-link p-0 text-white">Terms and Conditions</a></li>
+                {/* <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Emails:</a></li> */}
+                <p className="font-weight-bold p-0 m-0">Emails:</p>
+                <li className="nav-item mb-2"><a href="mailto:stockbroking@capitalbancorpgroup.com" className="nav-link p-0 text-white">stockbroking@capitalbancorpgroup.com</a></li>
+                <li className="nav-item mb-2"><a href="mailto:info@capitalbancorpgroup.com" className="nav-link p-0 text-white">info@capitalbancorpgroup.com</a></li>
+
               </ul>
             </div>
 

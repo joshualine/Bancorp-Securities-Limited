@@ -24,7 +24,7 @@ const MarketCap = () => {
       }
     }
     fetchmarketCaps();
-    
+
   }, []);
 
   let badgeStyle2 = {
@@ -35,7 +35,7 @@ const MarketCap = () => {
   }
 
   const arrowCheck = marketCaps.marketCapPercent;
-  
+
   let arrowColor = {}
   let arrowShape = true
   if (arrowCheck <= 0) {
@@ -48,13 +48,11 @@ const MarketCap = () => {
 
   return (
     <>
-      { loading ? (<Spinner />) : (<>
-<Card key={marketCaps.id} title={"Market Capitalization (N)"} amount={marketCaps.marketCapAmount} percentage={marketCaps.marketCapPercent} badgeStyle={arrowColor} ytdFigure={marketCaps.marketCapYtd}>
-          { arrowShape ? (<FaArrowDown className="inline mb-1" />) : (<FaArrowUp className="inline mb-1" />)}
+      {loading ? (<Spinner />) : (<>
+        <Card key={marketCaps.id} title={"Market Capitalization (N)"} amount={marketCaps.marketCapAmount} percentage={marketCaps.marketCapPercent} badgeStyle={arrowColor} ytdFigure={marketCaps.marketCapYtd}>
+          {arrowShape ? (<FaArrowDown className="inline mb-1" />) : (<FaArrowUp className="inline mb-1" />)}
         </Card>
-
-      </>) }
-
+      </>)}
     </>
   )
 }

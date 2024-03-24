@@ -10,13 +10,14 @@ import './homeCards.css'
 const HomeCards = () => {
   return (
     <>
-      <div className="card_container">
 
-          <ShareIndex />
-          <MarketCap />
-          <Volume />
-          <Value />
-          <Deals />
+    <h3 className='px-5 py-0'>Research Portal</h3>
+      <div className="card_container">
+        <ShareIndex />
+        <MarketCap />
+        <Volume />
+        <Value />
+        <Deals />
 
       </div>
     </>
