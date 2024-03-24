@@ -5,9 +5,33 @@ import ReportForms from "../../components/form/ReportForms"
 import Header from "../../components/header/Header"
 
 
-//Upload New Reports
-const uploadReports = async (newSummary) => {
-  await fetch('/api/stock', {
+//Upload New pricelist
+const uploadDailyPricelist = async (newReport) => {
+  await fetch('/api/dailyPricelist', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newReport),
+  });
+  return;
+};
+
+//Upload Stock Recommendation
+const uploadStockRec = async (newRecommendation) => {
+  await fetch('/api/stockRecommendation', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newRecommendation),
+  });
+  return;
+};
+
+//Upload Daily Market Summary
+const uploadDailySummary = async (newSummary) => {
+  await fetch('/api/dailyMarketSummary', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -33,7 +57,7 @@ const UploadReportsPage = () => {
   return (
     <>
       <Header />
-      <ReportForms />
+      <ReportForms uploadPricelistSubmit={uploadDailyPricelist} uploadStockRecSubmit={uploadStockRec} uploadDailySummaryReportSubmit={uploadDailySummary}/>
     </>
   )
 }

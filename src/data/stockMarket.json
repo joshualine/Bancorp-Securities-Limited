@@ -61,38 +61,66 @@
       "dealsPercent": "56.64"
     }
   ],
-
   "user": [
     {
       "id": "admin",
       "name": "Nihira",
-      "password": "admin",
-      "email": "nihiratechiees@gmail.com",
-      "phone": "8989898989",
-      "country": "usa",
-      "address": "",
-      "role":"admin",
-      "gender": "female"
+      "password": "Stock@123",
+      "email": "it@capitalbancorpgroup.com"
     },
     {
-      "id": "ntuser",
+      "id": "researchadmin",
       "name": "Fullname",
-      "password": "ntuser",
-      "email": "email@email.com",
-      "phone": "56778889989",
-      "country": "singapore",
-      "address": "address1",
-      "role":"user",
-      "gender": "male"
+      "password": "Research@1324",
+      "email": "email@email.com"
     }
   ],
-
-  "stockRec": [
+  "stockRecommendation": [
     {
       "id": "1",
       "reportType": "Stock Recommendation",
       "date": "21/09/2023",
       "link": "nihiratechiees@gmail.com"
+    },
+    {
+      "id": "d973",
+      "reportType": "Stock Recommendation",
+      "date": "2024-03-03",
+      "reportLink": "stock recommendation"
+    },
+    {
+      "id": "5560",
+      "reportType": "",
+      "date": "2024-03-01",
+      "reportLink": "hhh"
+    }
+  ],
+  "dailyPricelist": [
+    {
+      "id": "1",
+      "reportType": "Stock Recommendation",
+      "date": "21/09/2023",
+      "link": "nihiratechiees@gmail.com"
+    },
+    {
+      "id": "4f4d",
+      "reportType": "Pricelist",
+      "date": "2024-03-01",
+      "reportLink": "This is for daily price list"
+    }
+  ],
+  "dailyMarketSummary": [
+    {
+      "id": "1",
+      "reportType": "Stock Recommendation",
+      "date": "21/09/2023",
+      "link": "nihiratechiees@gmail.com"
+    },
+    {
+      "id": "37e1",
+      "reportType": "Market Summary",
+      "date": "2024-03-02",
+      "reportLink": "This is for market summary"
     }
   ]
 }

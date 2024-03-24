@@ -28,7 +28,6 @@ const SummaryForm = ({ postSummarySubmit }) => {
   const removeNonNumeric = (num) => num.toString().replace(/[^0-9]/g, "");
 
   const handleChange = (event) => setNgxAmount(addCommas(removeNonNumeric(event.target.value)));
-    // console.log(ngxAmount)
 
   const submitForm = (event) =>{
     event.preventDefault()
